@@ -1,0 +1,13 @@
+/*CUSTOM FONT DECLARATION*/
+
+
+
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('robotoslab-regular-webfont.woff2') format('woff2'),
+         url('robotoslab-regular-webfont.woff') format('woff'),
+         url('RobotoSlab-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}

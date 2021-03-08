@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with FLEX (flexbox)</title>
+    <style>
+        body{
+            background-color: #333;
+            font-family: Arial;
+        }
+        .navbar ul{
+            list-style: none;
+            padding: 0;
+            margin:0;
+            background-color: #111;
+            
+            /*new*/
+            display: flex;
+            justify-content:  flex-start;
+            
+        }
+        @media (max-width: 800px){
+            .navbar ul{
+                flex-direction: column;
+            }
+        }
+        .navbar li{
+            border: 1px solid red;
+            padding: 0.5em;
+        }
+        .navbar .brand{
+            font-size: 30px;
+            margin: 0.5em;
+        }
+        .navbar a{
+            text-decoration: none;
+            color:white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <!--
+            by default:
+                main: start
+                cross: strech
+            --->
+        <!--Flex container/ start-->
+        <ul>
+            <!-- li - flex item -->
+            <li class="brand"><a href="">BRAND</a></li>
+            <li><a href="">Possimus</a></li>
+            <li><a href="">Eius.</a></li>
+            <li><a href="">Infdfsf</a></li>
+            <li><a href="">Eum.</a></li>
+            <li><a href="">Impedit!</a></li>
+            <li><a href="">Suscipit.</a></li>
+        </ul>
+        <!--Flex container/end-->
+    </nav>
+</body>
+</html>
